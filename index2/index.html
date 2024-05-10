@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .warp {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list ul,
+        .list li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .list ul {
+            display: flex;
+        }
+
+        .list li {
+            width: 100px;
+            height: 50px;
+            border: 1px solid;
+            border-top: none;
+            border-left: none;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .list>ul:nth-child(1) li {
+            border-top: 1px solid;
+        }
+
+        .list ul li:nth-child(1) {
+            border-left: 1px solid;
+        }
+
+        li>div {
+            width: 100%;
+            height: max-content;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="list">
+        </div>
+    </div>
+</body>
+<script src="index2.js"></script>
+
+</html>
